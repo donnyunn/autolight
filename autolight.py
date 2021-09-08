@@ -3,7 +3,7 @@ from __future__ import print_function
 
 import numpy as np
 import cv2 as cv
-# import stepper as step
+import stepper as step
 # import led
 
 # local modules
@@ -62,10 +62,10 @@ def decision(vis, x, lum):
         if abs(x - origin) > margin:
             if x >= origin:
                 # print("step.forward(4)")
-                # step.forward(4)
+                step.forward(4)
             else:
                 # print("step.backward(4)")
-                # step.backward(4)
+                step.backward(4)
 
 def main():
     import sys, getopt
